@@ -9,7 +9,7 @@ namespace Andead.UnitOfWork
     {
         public UnitOfWork() : base() { }
 
-        public UnitOfWork(DbContextOptions<UnitOfWork> options) : base(options) { }
+        public UnitOfWork(DbContextOptions options) : base(options) { }
 
         protected abstract override void OnConfiguring(DbContextOptionsBuilder options);
 
