@@ -7,10 +7,9 @@ namespace Andead.UnitOfWork
 {
     public abstract class UnitOfWork : DbContext, IUnitOfWork
     {
-        public UnitOfWork()
-        {
-            Database.EnsureCreated();
-        }
+        public UnitOfWork() : base() { }
+
+        public UnitOfWork(DbContextOptions<UnitOfWork> options) : base(options) { }
 
         protected abstract override void OnConfiguring(DbContextOptionsBuilder options);
 
