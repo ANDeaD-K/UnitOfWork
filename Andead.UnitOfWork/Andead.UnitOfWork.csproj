@@ -4,7 +4,6 @@
     <TargetFramework>net5.0</TargetFramework>
     <Authors>Andrey Kislov</Authors>
     <Product>UnitOfWork</Product>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
